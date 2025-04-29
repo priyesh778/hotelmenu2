@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="" />
+  </head>
+  <style>
+
+    table {
+      border: 1px solid black;
+      
+    }
+    td {
+      padding: 12px;
+      border: 1px solid black;
+      padding-right: 70px;
+      background-color: bisque;
+    }
+    .btn3 {
+      color: white;
+      background-color: green;
+      border: none;
+      border-radius: 5px;
+      margin-left: 5px;
+      margin-right: -9px;
+    }
+    .btn5 {
+      color: white;
+      background-color: green;
+      border: none;
+      border-radius: 5px;
+    }
+    .card-text
+    .card-title {
+      text-align: center;
+    }
+    .box
+        {
+            width: 100%;
+            height: 60px;
+            background-color: #a58585;
+            text-align: center;
+            font-size: 34px;
+            font-weight: bold;
+            padding-top: 5px;
+        }
+
+        .container
+        {
+            width: 100%;
+            height: 100vh;
+            
+        }
+
+  </style>
+  <body>
+   
+   
+    <div class="container">
+      <div class="box">HOTEL MENU</div>
+       
+    <!-- <div class="box text-bg-success"> -->
+      <!-- <div class="container"> -->
+        <div class="row row-cols-lg-4  row-cols-md-3 row-cols-md-2">
+          
+          <div class="col py-2">
+          
+            <div class="card h-100">
+             <img src="img/l2.jpg" alt="">
+              <div class="card-body">
+               
+                <h5 class="card-title">pizza </h5>
+                <div class="d-flex justify-content-between mt-4">
+                   <span class="text fw-semibold">RS=100</span>
+                  
+                  <a class="btn btn-primary btn3" id="btn1" onclick="addtocart('100','pizza')">Add</a>
+                 
+                  <a class="btn btn-primary btn3" id="btn1" onclick="removefromcart('100','pizza')">Remove</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="col py-2">
+            <div class="card h-100">
+             <img src="img/l1.jpg" alt="">
+              <div class="card-body">
+               
+                <h5 class="card-title">burger</h5>
+                <div class="d-flex justify-content-between mt-4">
+                  <span class="text fw-semibold">RS=200</span>
+             
+                
+                  <a class="btn btn-primary btn3" id="btn1" onclick="addtocart('200','burger')">Add</a>
+
+                  <a class="btn btn-primary btn3" id="btn1" onclick="removefromcart('200','burger')">Remove</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="col py-2">
+            <div class="card h-100">
+              <img src="img/l3.jpg" alt="">
+              <div class="card-body">
+                
+                <h5 class="card-title">hot dog</h5>
+                <div class="d-flex justify-content-between mt-4">
+                  <span class="text fw-semibold">RS=300</span>
+              
+                  <a class="btn btn-primary btn3" id="btn1" onclick="addtocart('300','hot dog')">Add</a>
+
+                  <a class="btn btn-primary btn3" id="btn1" onclick="removefromcart('200','hot dog')">Remove</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="col py-2">
+            <div class="card h-100">
+              <img src="img/l4.jpg" alt="">
+              <div class="card-body">
+                
+                <h5 class="card-title">dosa</h5>
+                <div class="d-flex justify-content-between mt-4">
+                  <span class="text fw-semibold">RS=100</span>
+                
+                  <a class="btn btn-primary btn3" id="btn1" onclick="addtocart('100','dosa')">Add</a>
+                  <a class="btn btn-primary btn3" id="btn1" onclick="removefromcart('100','dosa')">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="col py-2">
+            <div class="card h-100">
+              <img src="img/l5.jpg" alt="">
+              <div class="card-body">
+                
+                <h5 class="card-title">biryyani</h5>
+                <div class="d-flex justify-content-between mt-4">
+                  <span class="text fw-semibold">RS=350</span>
+                  <a class="btn btn-primary btn3" id="btn1" onclick="addtocart('350','biryyani')">Add</a>
+                  <a class="btn btn-primary btn3" id="btn1" onclick="removefromcart('350','biryyani')">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="col py-2">
+            <div class="card h-100">
+              <img src="img/l6.jpg" alt="">
+              <div class="card-body">
+                
+                <h5 class="card-title">buteer paneer</h5>
+                <div class="d-flex justify-content-between mt-4">
+                  <span class="text fw-semibold">RS=180</span>
+                  <a class="btn btn-primary btn3" id="btn1" onclick="addtocart('180','buteer paneer')">Add</a>
+                  <a class="btn btn-primary btn3" id="btn1" onclick="removefromcart ('180','buteer paneer')">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="col py-2">
+            <div class="card h-100">
+              <img src="img/ll7.jpg" alt="">
+              <div class="card-body">
+
+                <h5 class="card-title">puff</h5>
+                <div class="d-flex justify-content-between mt-4">
+                  <span class="text fw-semibold">RS=100</span>
+                  <a class="btn btn-primary btn3" id="btn1" onclick="addtocart('100','puff')">Add</a>
+
+                  <a class="btn btn-primary btn3" id="btn1" onclick="removefromcart('100','puff')">Remove</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="col py-2">
+            <div class="card h-100">
+              <img src="img/l9.jpg" alt="">
+              <div class="card-body">
+                
+                <h5 class="card-title">sedwich</h5>
+                <div class="d-flex justify-content-between mt-4">
+                  <span class="text fw-semibold">RS=90</span>
+                  
+                  <a class="btn btn-primary btn3" id="btn1" onclick="addtocart('90','sandwhich')">Add</a>
+                  <a class="btn btn-primary btn3" id="btn1" onclick="removefromcart('90','sandwhich')">Remove</a>
+                                  
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+                    
+         
+          <!-- <div class="py-2">  -->
+             <div class="card h-100"> 
+               <table style="height: 373px; width: 100%"> 
+                <tr>
+
+          <!-- <div class="py-2"> -->
+        
+                  <td colspan="2">cart</td>
+                  <td id="cart-count">0</td>
+                  <td>price</td>
+                  <td id="cart-price">0</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">item</td>
+                  <td id="nam" colspan="3"></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">GST 18%</td>
+                  <td id="cart-gst">0</td>
+                  <td>Total</td>
+                  <td id="cart-total"></td>
+                </tr>
+
+                <tr>
+                  <td colspan="3">Discount</td>
+                  <!-- <td id="cart-gst">""</td>                   -->
+                  <td id="cart-discount" colspan="2"></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <button class="btn3" onclick="discount('0')">0%</button>
+                  </td>                  
+                  <td>
+                    <button class="btn3" onclick="discount('5')">5%</button>
+                  </td>
+                  <td>
+                    <button class="btn3" onclick="discount('10')">10%</button>
+                  </td>
+                  <td>
+                    <button class="btn3" onclick="discount('15')">15%</button>
+                  </td>
+                  <td>
+                    <button class="btn3" onclick="discount('20')">20%</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">Total</td>
+                  <td id="total" colspan="2"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        <!-- </div>
+      </div>
+    </div> -->
+    
+    <script>
+     var count = 0;
+     var price = 0;
+     var disamount = 0;
+     var cartItems = [];
+
+      function addtocart(p, name) {
+        count++;
+        price += parseInt(p);
+        cartItems.push(name);
+
+        updateCart();
+      }
+
+
+      function removefromcart(p, name) {
+        if (count > 0) {
+          count--;
+          price -= parseInt(p);
+
+          
+          const index = cartItems.indexOf(name);
+          if (index !== -1) {
+            cartItems.splice(index, 1);
+          }
+        }
+
+        updateCart();
+      }
+
+      function discount(per) {
+        let totalDiscount = parseFloat(
+          document.getElementById("cart-total").innerText || 0
+        );
+
+        
+
+        disamount = (totalDiscount * per) / 100;
+
+        document.getElementById("cart-discount").innerText =
+          disamount.toFixed(2);
+        document.getElementById("total").innerText = (
+          totalDiscount - disamount
+        ).toFixed(2);
+      }
+
+      function updateCart() {
+        document.getElementById("cart-count").innerText = count;
+        document.getElementById("cart-price").innerText = price;
+
+        var gst = price * 0.18;
+        var total = price + gst;
+
+        document.getElementById("cart-gst").innerText = gst.toFixed(2);
+        document.getElementById("cart-total").innerText = total.toFixed(2);
+
+      
+        document.getElementById("nam").innerHTML = cartItems
+          .map((item, i) =>` ${i + 1}. ${item}`)
+          .join("<br>");
+
+      
+        if (count === 0) {
+          document.getElementById("cart-discount").innerText = "0";
+          document.getElementById("total").innerText = "0";
+          disamount = 0;
+        }
+      
+    }    
+    </script>
+  </body>
+</html>
